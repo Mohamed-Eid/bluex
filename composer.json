@@ -1,0 +1,17 @@
+{
+    "name": "bluex/bluex",
+    "autoload": {
+        "psr-4": {
+            "Bluex\\Framework\\": "core/",
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohamed Eid",
+            "email": "medoeid50@gmail.com"
+        }
+    ],
+    
+    "require": {}
+}
