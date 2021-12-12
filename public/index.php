@@ -12,10 +12,18 @@
 */
 
 use Bluex\Framework\App;
+use Bluex\Framework\Http\Request;
 
 require __DIR__ . '/../vendor/autoload.php';
 
 $app = new App();
 
+$app->router->get('/', function () {
+    echo "Hello World BBBB";
+});
+
+$app->router->get('test', function () {
+    echo "Hello Test";
+});
 
 $app->run();

@@ -2,17 +2,23 @@
 
 namespace Bluex\Framework;
 
+use Bluex\Framework\Http\Request;
+
 class App
 {
 
+
     public array $config;
+    public Router $router;
+
     public function __construct()
     {
         $this->config = Config::load();
+        $this->router = new Router(new Request());
     }
 
     public function run()
     {
-        echo "hello world";
+        $this->router->resolve();
     }
 }
